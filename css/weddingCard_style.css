@@ -53,7 +53,7 @@ img {
 }
 /********* reset End *********/
 
-/********** #app **********/
+/********** #wedding-card **********/
 #app {
     height: 100%;
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -595,6 +595,11 @@ button {
 
 .waytocome-wrap .box {
     margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.waytocome-wrap .box .content {
+    margin-bottom: 20px;
 }
 
 .waytocome-wrap .title {
@@ -805,7 +810,7 @@ button {
     z-index: 999;
 }
 
-.c-account .title .arrow{
+.c-account .title > .arrow {
     position: absolute;
     top: 6px;
     right: 18px;
@@ -814,28 +819,13 @@ button {
     transform-origin: center center;
 }
 
-.c-account .title .arrow .btn::before {
-    position: absolute;
-    top: 6px;
-    right: 18px;
-    transform: rotate(0);
-    transition-duration: .5s;
-    transform-origin: center center;
-}
-
-.c-account .title .arrow .btn::after{
+.c-account .title > .arrow.rotate {
     top: 3px;
     transform: rotate(180deg);
     transition-duration: .5s;
 }
 
-.c-account .title .arrow.rotate {
-    top: 3px;
-    transform: rotate(180deg);
-    transition-duration: .5s;
-}
-
-.c-account .text::after {
+.c-account .text {
     position: relative;
     overflow: hidden;
     transition: .5s ease-out;
@@ -848,17 +838,11 @@ button {
     border-top: 0;
 }
 
-.c-account .text > .inner::before {
-    content: '';
+.c-account .text > .inner {
     padding: 10px;
     line-height: 26px;
     letter-spacing: 0;
     text-align: left;
-    position: absolute;
-}
-
-.c-account .text > .inner{
-    
 }
 
 .c-account .btn-copy {
