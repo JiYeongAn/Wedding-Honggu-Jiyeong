@@ -29,11 +29,13 @@
     <link rel="stylesheet" href="/css/weddingCard_style.css" type="text/css">
     <link rel="stylesheet" href="/css/font_style.css" type="text/css">
     <link rel="stylesheet" href="/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
 
     <!-- 폰트 -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Castoro" media="all">
 
     <!-- js -->
+    <script src="https://kit.fontawesome.com/d413c1bba5.js" crossorigin="anonymous"></script>
     <script src="/js/jquery-1.12.4.min.js" type="text/javascript"></script>
     <script src="/js/script.js" type="text/javascript"></script>
     <script src="/js/CountDown.js" type="text/javascript"></script>
@@ -247,7 +249,7 @@
                 <div class="calendar-wrap">
                     <div class="title">
                         <div class="m-title fade-in">
-                            12월 17일
+                            2022년 12월 17일
                         </div>
                         <div class="m-subtitle fade-in" style="letter-spacing: 1px; font-size: 0.9rem;">
                             토요일 오후 3시 50분<br></div>
@@ -521,7 +523,7 @@
                                 </div>
                                 <div class="content">
                                     <div>
-                                        📌 [인천1호선]
+                                        [인천1호선]
                                         <span class="c-bold">계산역</span>
                                         1번출구 도보 1분 거리
                                     </div>
@@ -535,11 +537,11 @@
 
                                 <div class="content">
                                     <div>
-                                        <p>📌 좌석버스 : 111, 111-2, 302, 3000, 5000</p>
-                                        <p>📌 일반버스 : 30, 76, 79</p>
-                                        <p>📌 마을버스 : 583, 588</p>
-                                        <p>📌 시외버스 : 80, 88(송내역), 81(김포), 88-1</p>
-                                        <p>📌 시외고속버스 : 1500, 2500, 9500, 3000, 5000</p>
+                                        <p>좌석버스 : 111, 111-2, 302, 3000, 5000</p>
+                                        <p>일반버스 : 30, 76, 79</p>
+                                        <p>마을버스 : 583, 588</p>
+                                        <p>시외버스 : 80, 88(송내역), 81(김포), 88-1</p>
+                                        <p>시외고속버스 : 1500, 2500, 9500, 3000, 5000</p>
                                     </div>
                                 </div>
                             </div>
@@ -550,9 +552,9 @@
                                 </div>
                                 <div class="content">
                                     <div>
-                                        <p>📌 네이게이션 "CN웨딩홀 계산점" 검색</p>
+                                        <p>네이게이션 "CN웨딩홀 계산점" 검색</p>
                                         <p>
-                                            👉계산CN웨딩홀 주차장 이용 <u>(2시간 무료주차)</u>
+                                            계산CN웨딩홀 주차장 이용 <u>(2시간 무료주차)</u>
                                         </p>
                                     </div>
                                 </div>
@@ -591,58 +593,77 @@
                         <div class="item">
                             <div class="title">
                                 <div>신랑측 계좌번호</div>
-                                <div class="arrow">
+                                <div class="bar arrow">
                                     <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                        </svg>
+                                        <i class="fa-solid fa-angle-up"></i>
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="grooms_text text gothic">
+                            <div id="toggle" class="grooms_text text gothic">
                                 <div class="inner">
                                    <ul>
                                        <li>
-                                           <a href="#">
-                                               <span class="g_account">신한 110-123-456789</span>
-                                               <span class="g_name">강지혁</span>
-                                           </a>
+                                           <div class="left">
+                                               <span class="inner_account">신한 110-123-456789</span>
+                                               <span class="inner_name">강지혁</span>
+                                           </div>
+                                           <div class="right">
+                                               <span class="inner_btn btn-copy btn1">복사하기</span>
+                                           </div>
                                        </li>
+                                       <li></li>
                                        <li>
-                                           <a href="#">
-                                               <span class="btn-copy">복사하기</span>
-                                           </a>
+                                           <div class="left">
+                                               <span class="inner_account">신한 110-123-456789</span>
+                                               <span class="inner_name">강지혁</span>
+                                           </div>
+                                           <div class="right">
+                                               <span class="inner_btn btn-copy btn2">복사하기</span>
+                                           </div>
                                        </li>
                                    </ul>
-                                   
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="item">
                             <div class="title">
-                                <div>
-                                    신부측 계좌번호
+                                <div>신부측 계좌번호</div>
+                                <div class="bar arrow">
+                                    <a href="#" class="btn">
+                                        <i class="fa-solid fa-angle-up"></i>
+                                    </a>
                                 </div>
-                                <div class="arrow rotate"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg></div>
                             </div>
-                            <div class="text gothic">
-                                <div class="inner"><span>국민 200123-45-678900</span><br> <span>최유라</span></div>
-                                <div class="btn-copy">
-                                    복사하기
+
+                            <div id="toggle" class="brides_text text gothic">
+                                <div class="inner">
+                                   <ul>
+                                       <li>
+                                           <div class="left">
+                                               <span class="inner_account">신한 110-123-456789</span>
+                                               <span class="inner_name">강지혁</span>
+                                           </div>
+                                           <div class="right">
+                                               <span class="inner_btn btn-copy btn1">복사하기</span>
+                                           </div>
+                                       </li>
+                                       <li></li>
+                                       <li>
+                                           <div class="left">
+                                               <span class="inner_account">신한 110-123-456789</span>
+                                               <span class="inner_name">강지혁</span>
+                                           </div>
+                                           <div class="right">
+                                               <span class="inner_btn btn-copy btn2">복사하기</span>
+                                           </div>
+                                       </li>
+                                   </ul>
                                 </div>
-                                <div class="btn-kakaopay"><img src="/images/icon/icon-kakaopay.png"></div>
-                            </div>
-                            <div class="text gothic">
-                                <div class="inner"><span>신한 110-123-456789</span><br> <span>최현상</span></div>
-                                <div class="btn-copy">
-                                    복사하기
-                                </div>
-                                <!---->
                             </div>
                         </div>
+ <!---->
                     </div>
                 </div>
             </div>
@@ -691,21 +712,6 @@
     <script type="text/javascript" src="/mcard/1002/a_1002.js?73d1e1b0f794fb28e3ca85c36eaeead7"></script>
 
 
-    <script>
-        // 전체메뉴 toggle
-        $(".c-account > .item > .title").click(function(e) {
-            e.preventDefault();
-
-            $(".c-account > .text").slideToggle();
-            $(".btn").toggleClass("open");
-
-            if ($(".btn").hasClass("open")) {
-                $(".btn").find(">i").attr("class", "fa fa-angle-up");
-            } else {
-                $(".btn").find(">i").attr("class", "fa fa-angle-down");
-            }
-        });
-    </script>
 
 
 </body>
